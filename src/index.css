@@ -1,0 +1,139 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5; /* Background Color */
+  color: #212121; /* Text Color */
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Auth */
+.auth-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.auth-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-primary {
+  background-color: #09518c; /* Accent Color */
+  color: white;
+   border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease,
+ 
+}
+.btn-primary:hover{
+  background-color: #0d71c2;
+ transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: #FF5722; /* Secondary Color */
+  color: white;
+   border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease,
+}
+.btn-secondary:hover{
+      background-color: #9a2806;
+      transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-accent {
+  background-color: #4CAF50; /* Primary Color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toggle {
+  cursor: pointer;
+  color: #2196F3;
+}
+
+/* Dashboard */
+.dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.transaction-form, .summary, .transaction-list {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.transaction-form input, .transaction-form select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.summary-item {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.summary-item.income { color: #4CAF50; }
+.summary-item.expense { color: #FF5722; }
+.summary-item.balance { color: #212121; }
+.summary-item.savings { color: #4CAF50; }
+
+.transaction-list ul {
+  list-style: none;
+}
+
+.transaction-list li {
+  padding: 10px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-list li.income { border-left: 5px solid #4CAF50; }
+.transaction-list li.expense { border-left: 5px solid #FF5722; }
+
+.transaction-list button {
+  margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app { padding: 10px; }
+  .dashboard header { flex-direction: column; }
+}
